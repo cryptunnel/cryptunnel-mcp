@@ -1,0 +1,47 @@
+{
+  "name": "cryptunnel-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Cryptunnel - let a coding agent create and look up crypto payments",
+  "type": "module",
+  "bin": {
+    "cryptunnel-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cryptunnel",
+    "mcp",
+    "model-context-protocol",
+    "crypto",
+    "payments",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "homepage": "https://cryptunnel.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptunnel/cryptunnel-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptunnel/cryptunnel-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "cryptunnel": "^1.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.8.3"
+  }
+}
