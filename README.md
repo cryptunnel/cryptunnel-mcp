@@ -1,5 +1,7 @@
 # cryptunnel-mcp
 
+[![Test](https://github.com/cryptunnel/cryptunnel-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/cryptunnel/cryptunnel-mcp/actions/workflows/test.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An MCP server that lets a coding agent - Claude Code, Cursor, anything speaking the Model Context
 Protocol - create and look up [Cryptunnel](https://cryptunnel.io) crypto payments. Build a payment
 integration by prompting: "create a sandbox payment for 10 USD and give me the checkout link".
